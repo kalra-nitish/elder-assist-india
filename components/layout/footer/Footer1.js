@@ -50,10 +50,10 @@ export default function Footer1() {
                     <p>
                       Welcome to Elder Assist India, your partner in top-tier
                       elderly care. We provide personalized services including{" "}
-                      <b>
+                      <span className="bold-themes">
                         medical, everyday essentials, financial care, emergency
                         assistance, & wellness activities
-                      </b>
+                      </span>
                       . Join us in supporting India's growing senior population,
                       projected to reach 173 million by 2026, ensuring they lead
                       dignified and fulfilling lives.
@@ -73,9 +73,9 @@ export default function Footer1() {
                     <li>
                       <Link href="/services">Elderly Care Services</Link>
                     </li>
-                    <li>
+                    {/* <li>
                       <Link href="/subscription-plan">Subscription Plans</Link>
-                    </li>
+                    </li> */}
                     <li>
                       <Link href="/blogs">Blogs</Link>
                     </li>
@@ -124,13 +124,13 @@ export default function Footer1() {
                     </li>
                     <li>
                       <i className="icon-3"></i>
-                      <Link href="mailto:info@elderassistindia.com">
-                        info@elderassistindia.com
+                      <Link href="mailto:elderassistindia@gmail.com">
+                      elderassistindia@gmail.com
                       </Link>
                     </li>
                     <li>
                       <a
-                        href="https://wa.me/91********?text-Hello How can I help you ?"
+                        href="https://wa.me/919643492249?text-Hello How can I help you ?"
                         target="_blank"
                         style={{ marginTop: -8, marginLeft: -8 }}
                       >
@@ -139,7 +139,7 @@ export default function Footer1() {
                           alt="whatsapp number"
                           style={{ height: 35 }}
                         />
-                        (91)-xxx-xxx-xxxx
+                        (91)-964-349-2249
                       </a>
                     </li>
                   </ul>

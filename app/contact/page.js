@@ -26,11 +26,11 @@ export default function Home() {
                                         </li>
                                         <li>
                                             <h4 className="fs_16 mb_10"><i className="icon-16 mr_10 fs_18"></i>Phone No</h4>
-                                            <p className="fs_12"><Link href="tel:(+91) XXX XXXX XXXX">(+91) XXX XXXX XXXX</Link></p>
+                                            <p className="fs_12"><Link href="tel:(+91)9643492249">(+91) 964 349 2249</Link></p>
                                         </li>
                                         <li>
                                             <h4 className="fs_16 mb_10"><i className="icon-15 mr_10 fs_15"></i>Email</h4>
-                                            <p className="fs_12"><Link href="mailto:info@elderassistindia.com">info@elderassistindia.com</Link></p>
+                                            <p className="fs_12"><Link href="mailto:elderassistindia@gmail.com">elderassistindia@gmail.com</Link></p>
                                         </li>
                                     </ul>
                                 </div>
@@ -41,7 +41,7 @@ export default function Home() {
                         </div>
                     </section>
 
-                    <section className="section-padding gray-bg">
+                    <section id="contact-form-section" className="section-padding gray-bg">
                         <div className="auto-container">  
                             <div className="section_heading text-center mb_40">
                                 <span className="section_heading_title_small">Let’s Contact</span>

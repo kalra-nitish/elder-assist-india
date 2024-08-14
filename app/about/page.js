@@ -24,26 +24,26 @@ export default function Home() {
               through our personalized, holistic services. We offer a
               comprehensive suite of services designed to meet the diverse needs
               of our elderly clientele. Our range of services spans from{" "}
-              <b>
+              <span className="bold-theme">
                 Medical & Healthcare Solutions, Everyday Essentials Hub,
                 Financial Care, Emergency Services, Fun & Wellness activities
-              </b>
+              </span>
               .<br />
-              <b>Meeting the Demand of India's Changing Demographics</b>
+              <span className="bold-theme">Meeting the Demand of India's Changing Demographics</span>
               <br />
               In light of India's demographic shifts, the need for professional
               elderly care is more important than ever. The United Nations
               Population Fund projects that by 2026, India's senior population
               will reach 173 million. This underlines the vital role that{" "}
-              <b>Elder Assist India</b> team plays in responding to the
+              <span className="bold-theme">Elder Assist India</span> team plays in responding to the
               escalating demand for professional elderly care services in the
               country.
               <br />
-              <b>
+              <span className="bold-theme">
                 Join us as we strive to make a significant difference in the
                 lives of India's elderly population, ensuring they receive the
                 care and respect they deserve.
-              </b>
+              </span>
             </p>
            
           </div>

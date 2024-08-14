@@ -99,9 +99,9 @@ const MobileMenu = ({ isSidebar, handleMobileMenu, handleSidebar }) => {
                   </div>
                 </li>
 
-                <li>
+                {/* <li>
                   <Link href="/living-option">Subscription Plan</Link>{" "}
-                </li>
+                </li> */}
 
                 {/* <li className={isActive.key == 4 ? "dropdown current" : "dropdown"}>
                                     <Link href="/#" onClick={handleMobileMenu}>Pages</Link>

@@ -1,5 +1,7 @@
 "use client";
 
+import Link from 'next/link';
+
 export default function Contact() {
   return (
     <div className="contact-widget">
@@ -8,7 +10,9 @@ export default function Contact() {
       </h4>
       <p style={{ color: "#fff" }}>Just one click away!</p>
       <p style={{ color: "#fff" }}>Secure your spot for our top notch</p>
-      <button className="btn-1">Book our services now</button>
+      <Link href="/contact#contact-form-section" passHref>
+        <button className="btn-1">Book our services now</button>
+      </Link>
     </div>
   );
 }

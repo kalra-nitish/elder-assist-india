@@ -51,7 +51,7 @@ export default function Header3({
                 </div>
                 <div className="header-upper-phone-number">
                   <a
-                    href="https://wa.me/91********?text-Hello How can I help you ?"
+                    href="https://wa.me/919643492249?text-Hello How can I help you ?"
                     target="_blank"
                   >
                     <img
@@ -59,7 +59,7 @@ export default function Header3({
                       alt="whatsapp number"
                       style={{ height: 50 }}
                     />
-                    (91)-xxx-xxx-xxxx
+                    (91)-964-349-2249
                   </a>
                 </div>
                 {/*<div className="header-link-btn d-none d-md-block"><a href="/" className="btn-1">Donation Now <span></span></a></div>*/}
@@ -98,7 +98,7 @@ export default function Header3({
                   </div>
                   <div className="header-upper-phone-number">
                     <a
-                      href="https://wa.me/91********?text-Hello How can I help you ?"
+                      href="https://wa.me/919643492249?text-Hello How can I help you ?"
                       target="_blank"
                     >
                       <img
@@ -106,7 +106,7 @@ export default function Header3({
                         alt="whatsapp number"
                         style={{ height: 50 }}
                       />
-                      (91)-xxx-xxx-xxxx
+                      (91)-964-349-2249
                     </a>
                   </div>
                   {/*<div className="header-link-btn d-none d-md-block"><a href="/" className="btn-1">Donation Now <span></span></a></div>*/}

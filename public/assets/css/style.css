@@ -1927,7 +1927,10 @@ ul.banner-social-icon li a:hover {
 
 .footer-1-top {
     background: #262540;
-    padding: 41px 0;
+    padding: 20px 0;
+}
+.footer-1-top .logo img{
+    height: 140px;
 }
 
 .footer-1-social-icon a {
@@ -1948,7 +1951,7 @@ ul.banner-social-icon li a:hover {
 
 .footer-1-middle {
     position: relative;
-    padding: 100px 0;
+    padding: 50px 0;
     background: #2C2A49;
 }
 
@@ -1957,8 +1960,14 @@ ul.banner-social-icon li a:hover {
     margin-bottom: 30px;
 }
 
+.about-widget-1 span.bold-themes{
+    color: var(--theme-color);
+    display: inline-block;
+}
+
 .about-widget-1-text p {
     color: #fff;
+    display: inline-block;
 }
 
 .link-widget-1-list a {
@@ -2015,7 +2024,7 @@ ul.contact-widget-1-list i {
 }
 
 /* services section */
-span.section_heading_title_small {
+span.section_heading_title_small, span.bold-theme{
     font-size: 18px;
     color: var(--theme-color);
 	margin-bottom: 6px;
@@ -2279,7 +2288,7 @@ ul.about-1-list {
 
 section.about-1-section {
     position: relative;
-    padding: 150px 0 120px;
+    padding: 50px 0 50px;
 }
 
 .about-1-image-1 {
@@ -3861,7 +3870,7 @@ section.video-1-section.alt  {
 /* services 4 */
 section.service-4-section {
     position: relative;
-    padding: 150px 0;
+    padding: 50px 0;
 }
 
 .service-4-icon {
@@ -4279,7 +4288,7 @@ ul.bredcrumb-list li + li:before {
 }
 
 .section-padding {
-	padding: 150px 0 120px;
+	padding: 50px 0 50px;
 }
 
 .image-box-1-image {

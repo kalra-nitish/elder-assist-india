@@ -35,9 +35,9 @@ export default function Menu() {
         {/*        <li><Link href="/living-option-details">Living Option Details</Link></li>*/}
         {/*    </ul>*/}
         {/*</li>*/}
-        <li>
+        {/* <li>
           <Link href="/subscription-plan">Subscription Plan</Link>
-        </li>
+        </li> */}
         <li>
           <Link href="/blogs">Blogs</Link>
         </li>

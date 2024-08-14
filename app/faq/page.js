@@ -175,38 +175,6 @@ export default function Home() {
                             </div>
                         </div>
                     </section>
-
-                    <section className="section-padding gray-bg">
-                        <div className="auto-container">
-                            <div className="section_heading text-center mb_65">
-                                <span className="section_heading_title_small">Send Message</span>
-                                <h2 className="section_heading_title_big">Didn’t find your answer? <br/>
-                                    Submit your question</h2>
-                            </div>
-                            <div className="form-alt-3">
-                                <form method="post" action="sendemail.php" id="contact-form">
-                                    <div className="row clearfix">
-                                        <div className="form-group col-md-6">
-                                            <input type="text" name="form_name" placeholder="Your Name" required/>
-                                        </div>
-                                        
-                                        <div className="form-group col-md-6">
-                                            <input type="text" name="email" placeholder="Your Email" required/>
-                                        </div>
-                                        
-                                        <div className="form-group col-md-12">
-                                            <textarea name="form_message" placeholder="Massage"></textarea>
-                                        </div>
-                                        
-                                        <div className="form-group col-md-12 text-center">
-                                            <input id="form_botcheck" name="form_botcheck" className="form-control" type="hidden" value="form_botcheck"/>
-                                            <button className="btn-1 btn-small" type="submit" data-loading-text="Please wait...">Send Message <i className="flaticon-right-arrow-1"></i><span></span></button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </section>
                 </div>
 
             </Layout>
