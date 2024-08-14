@@ -10,9 +10,7 @@ export default function Home() {
              
             </div>
             <div className="cookies-1-desc">
-            <h3 style={{ marginBottom: "50px" }}>Welcome to ElderAssistIndia.<br/> 
-            <h5>Please read these Terms and Conditions carefully before using the services operated by ElderAssistIndia.</h5>
-            </h3>
+            
             <ul>
                 <li>
                     <h4>Acceptance of Terms</h4>
@@ -61,7 +59,7 @@ export default function Home() {
                 </li>
                 <li>
                     <h4>Changes to Terms</h4>
-                    <p>If you have any questions about these Terms, please contact us at info@elderassistindia.com.
+                    <p>If you have any questions about these Terms, please contact us at elderassistindia@gmail.com.
                     </p>
                 </li>
             </ul>

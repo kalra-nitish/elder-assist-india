@@ -76,6 +76,21 @@
       "static/chunks/main-app.js",
       "static/chunks/app/everyday-essentials/page.js"
     ],
+    "/other-care/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/other-care/page.js"
+    ],
+    "/privacy-policy/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/privacy-policy/page.js"
+    ],
+    "/terms-and-conditions/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/terms-and-conditions/page.js"
+    ],
     "/emergency-services/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
@@ -86,10 +101,15 @@
       "static/chunks/main-app.js",
       "static/chunks/app/fun-wellness/page.js"
     ],
-    "/other-care/page": [
+    "/cookies-policy/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/other-care/page.js"
+      "static/chunks/app/cookies-policy/page.js"
+    ],
+    "/disclaimer/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/disclaimer/page.js"
     ]
   }
 }

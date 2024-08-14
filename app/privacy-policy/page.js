@@ -97,7 +97,7 @@ export default function Home() {
                 <p>
                   You have the right to access, update, or delete your personal
                   information. If you wish to exercise any of these rights,
-                  please contact us at info@elderassistindia.com.
+                  please contact us at elderassistindia@gmail.com.
                 </p>
               </li>
               <li>

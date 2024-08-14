@@ -1,8 +1,8 @@
 {
-  "/page": "app/page.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js",
   "/blogs/page": "app/blogs/page.js",
-  "/fun-wellness/page": "app/fun-wellness/page.js",
-  "/other-care/page": "app/other-care/page.js",
-  "/contact/page": "app/contact/page.js"
+  "/disclaimer/page": "app/disclaimer/page.js",
+  "/contact/page": "app/contact/page.js",
+  "/privacy-policy/page": "app/privacy-policy/page.js",
+  "/terms-and-conditions/page": "app/terms-and-conditions/page.js",
+  "/cookies-policy/page": "app/cookies-policy/page.js"
 }
