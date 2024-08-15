@@ -15,7 +15,7 @@ export default function Footer1() {
               </div>
               <ul className="footer-1-social-icon d-flex align-items-center">
                 <li>
-                  <Link href="https://www.facebook.com/profile.php?id=61559504316514">
+                  <Link href="https://www.facebook.com/profile.php?id=61563284027615">
                     <i className="fab fa-facebook-f"></i>
                   </Link>
                 </li>

@@ -70,7 +70,7 @@ export default function Banner() {
                     </SwiperSlide>
                     {/* Slide Item */}
                     <ul className="banner-social-icon d-flex">
-                        <li><Link href="https://www.facebook.com/profile.php?id=61562833385732"><i className="fab fa-facebook-f"></i></Link></li>
+                        <li><Link href="https://www.facebook.com/profile.php?id=61563284027615"><i className="fab fa-facebook-f"></i></Link></li>
                         <li><Link href="https://x.com/eldercare07"><i className="fab fa-twitter"></i></Link></li>
                         <li><Link href="https://www.linkedin.com/in/elder-assit-india-6a184331a/"><i className="fab fa-linkedin-in"></i></Link></li>
                     </ul>
