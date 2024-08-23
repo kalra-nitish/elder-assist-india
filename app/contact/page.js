@@ -45,10 +45,10 @@ export default function Home() {
 
                     <section id="contact-form-section" className="section-padding gray-bg">
                         <div className="auto-container">  
-                            <div className="section_heading text-center mb_40">
+                            {/* <div className="section_heading text-center mb_40">
                                 <span className="section_heading_title_small">Let’s Contact</span>
                                 <h2 className="section_heading_title_big">Have Something To Say?</h2>
-                            </div>          
+                            </div>           */}
                             <div className="form-alt-3">
                                <ContactForm />
                             </div>

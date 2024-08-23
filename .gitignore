@@ -4,6 +4,11 @@ node_modules/
 # Next.js build output
 .next/
 
+# Next.js
+.next
+.sst
+.open-next
+
 # Environment variables
 .env.local
 .env.development.local
@@ -24,5 +29,20 @@ package-lock.json
 # macOS
 .DS_Store
 
-# Build output
+
+# compiled output
+dist
+tmp
+/out-tsc
+/bin
 out/
+
+# misc
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+npm-debug.log
+yarn-error.log
+testem.log
+/typings
