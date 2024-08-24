@@ -1,6 +1,8 @@
 
 import Layout from "@/components/layout/Layout"
 import Link from "next/link"
+import ContactForm from "@/components/sections/contact/contact"
+
 export default function Home() {
 
     return (
@@ -43,35 +45,12 @@ export default function Home() {
 
                     <section id="contact-form-section" className="section-padding gray-bg">
                         <div className="auto-container">  
-                            <div className="section_heading text-center mb_40">
+                            {/* <div className="section_heading text-center mb_40">
                                 <span className="section_heading_title_small">Let’s Contact</span>
                                 <h2 className="section_heading_title_big">Have Something To Say?</h2>
-                            </div>          
+                            </div>           */}
                             <div className="form-alt-3">
-                                <form method="post" action="sendemail.php" id="contact-form">
-                                    <div className="row clearfix">
-                                        <div className="form-group col-md-6">
-                                            <input type="text" name="form_name" placeholder="Your Name" required/>
-                                        </div>
-                                        
-                                        <div className="form-group col-md-6">
-                                            <input type="email" name="email" placeholder="Your Email" required/>
-                                        </div>
-
-                                        <div className="form-group col-md-12">
-                                            <input type="text" name="phone"placeholder="Phone Number" required/>
-                                        </div>
-                                        
-                                        <div className="form-group col-md-12">
-                                            <textarea name="form_message" placeholder="Message"></textarea>
-                                        </div>
-                                        
-                                        <div className="form-group col-md-12 text-center">
-                                            <input id="form_botcheck" name="form_botcheck" className="form-control" type="hidden"/>
-                                            <button className="btn-1 btn-small" type="submit" data-loading-text="Please wait...">Send Message <i className="flaticon-right-arrow-1"></i><span></span></button>
-                                        </div>
-                                    </div>
-                                </form>
+                               <ContactForm />
                             </div>
                         </div>
                     </section>

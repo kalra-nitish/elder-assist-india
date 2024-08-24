@@ -1,0 +1,48 @@
+# Node.js
+node_modules/
+
+# Next.js build output
+.next/
+
+# Next.js
+.next
+.sst
+.open-next
+
+# Environment variables
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Log files
+*.log
+
+# Dependency lock files
+yarn.lock
+package-lock.json
+
+# IDE files
+.vscode/
+.idea/
+
+# macOS
+.DS_Store
+
+
+# compiled output
+dist
+tmp
+/out-tsc
+/bin
+out/
+
+# misc
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+npm-debug.log
+yarn-error.log
+testem.log
+/typings
