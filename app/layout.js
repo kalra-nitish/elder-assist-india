@@ -5,6 +5,7 @@ import 'swiper/css'
 import "swiper/css/pagination"
 import 'swiper/css/free-mode';
 import { pT_Serif, poppins } from '@/lib/font'
+import GoogleAnalytics from '@/components/GoogleAnalytics';
 export const metadata = {
     title: 'Elder Assist India',
     description: 'Elder Assist India',
@@ -13,6 +14,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
     return (
         <html lang="en" className={`${poppins.variable} ${pT_Serif.variable}`}>
+            <GoogleAnalytics />
             <body>{children}</body>
         </html>
     )
