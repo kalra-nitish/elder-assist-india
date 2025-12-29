@@ -17,5 +17,21 @@ export default function RootLayout({ children }) {
             <GoogleAnalytics />
             <body>{children}</body>
         </html>
+           <html lang="en" className={`${poppins.variable} ${pT_Serif.variable}`}>
+           <GoogleAnalytics />
+           <body>{children}</body>
+       </html>
+          <html lang="en" className={`${poppins.variable} ${pT_Serif.variable}`}>
+          <GoogleAnalytics />
+          <body>{children}</body>
+      </html>
+         <html lang="en" className={`${poppins.variable} ${pT_Serif.variable}`}>
+         <GoogleAnalytics />
+         <body>{children}</body>
+     </html>
+        <html lang="en" className={`${poppins.variable} ${pT_Serif.variable}`}>
+        <GoogleAnalytics />
+        <body>{children}</body>
+    </html>
     )
 }
