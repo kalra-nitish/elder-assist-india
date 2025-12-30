@@ -17,5 +17,6 @@ export default function RootLayout({ children }) {
             <GoogleAnalytics />
             <body>{children}</body>
         </html>
+        
     )
 }
