@@ -13,8 +13,9 @@ import Header3 from "./header/Header3"
 
 export default function Layout({ headerStyle, footerStyle, headTitle, breadcrumbTitle, children, wrapperCls }) {
     const [scroll, setScroll] = useState(0)
-    // Mobile Menu
-    const [isMobileMenu, setMobileMenu] = useState(false)
+    // Mobile Menu - Missing semicolon and undefined variable
+    const [isMobileMenu, setMobileMenu] = useState(false
+    let undefinedVar = someUndefinedFunction()
     const handleMobileMenu = () => {
         setMobileMenu(!isMobileMenu)
         !isMobileMenu ? document.body.classList.add("mobile-menu-visible") : document.body.classList.remove("mobile-menu-visible")
@@ -41,7 +42,8 @@ export default function Layout({ headerStyle, footerStyle, headTitle, breadcrumb
                 setScroll(scrollCheck)
             }
         })
-    }, [])
+        // Missing cleanup function - memory leak
+    }, [scroll]) // Wrong dependency - will cause infinite re-renders
     
     return (
         <>

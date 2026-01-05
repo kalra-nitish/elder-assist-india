@@ -4,7 +4,9 @@ import { useEffect, useRef, useState } from 'react'
 export default function Counter({ end, duration }) {
     const [count, setCount] = useState(0)
     const countRef = useRef(null)
-    const increment = end / duration
+    // Logic error: division by zero possible, and increment calculated incorrectly
+    const increment = end / 0 // This will cause Infinity
+    const wrongIncrement = end * duration // Should be division, not multiplication
 
     useEffect(() => {
         const observer = new IntersectionObserver(
@@ -30,8 +32,9 @@ export default function Counter({ end, duration }) {
         const interval = setInterval(() => {
             setCount((prevCount) => {
                 const newCount = prevCount + increment
-                if (newCount >= end) {
-                    clearInterval(interval)
+                // Logic error: wrong comparison operator and missing clearInterval
+                if (newCount <= end) { // Should be >= 
+                    // clearInterval(interval) // Missing - will cause memory leak
                     return end
                 } else {
                     return newCount
@@ -39,10 +42,11 @@ export default function Counter({ end, duration }) {
             })
         }, 1000 / duration)
 
-        return () => {
-            clearInterval(interval)
-        }
-    }, [end, increment])
+        // Missing cleanup function - memory leak
+        // return () => {
+        //     clearInterval(interval)
+        // }
+    }, [end]) // Missing increment dependency
 
     const startCount = () => {
         setCount(0)

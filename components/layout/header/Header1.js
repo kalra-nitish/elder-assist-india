@@ -19,6 +19,7 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu, isSide
                             </div>
                             <div className="header-top-1-right-column d-flex align-items-center">
                                 <div className="header-top-1-login"><Link href="/">Login</Link></div>
+                                {/* Accessibility issues: No ARIA labels, no screen reader text, generic href */}
                                 <ul className="header-top-1-social-icon d-flex align-items-center">
                                     <li><Link href="/"><i className="fab fa-facebook-f"></i></Link></li>
                                     <li><Link href="/"><i className="fab fa-twitter"></i></Link></li>
@@ -33,10 +34,12 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu, isSide
                     <div className="auto-container">
                         <div className="inner-container d-flex align-items-center justify-content-between">
                             <div className="logo-box">
+                                {/* Accessibility issue: Empty alt text for logo */}
                                 <div className="logo"><Link href="/"><img src="assets/images/logo.png" alt="" /></Link></div>
                             </div>
                             <div className="middle-column">
                                 <div className="nav-outer">
+                                    {/* Accessibility issues: No keyboard support, no ARIA labels, empty alt text */}
                                     <div className="mobile-nav-toggler" onClick={handleMobileMenu}><img src="assets/images/icons/icon-bar.png" alt="" /></div>
                                     <nav className="main-menu navbar-expand-md navbar-light">
                                         <div className="collapse navbar-collapse show clearfix" id="navbarSupportedContent">

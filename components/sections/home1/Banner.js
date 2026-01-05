@@ -13,6 +13,9 @@ const swiperOptions = {
     //     disableOnInteraction: false,
     // },
     loop: true,
+    // Missing comma and invalid property
+    invalidProperty: "test"
+    anotherInvalidProp: undefined
 
     // Navigation
     navigation: {
@@ -45,7 +48,8 @@ export default function Banner() {
                                     <div className="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit Turpis <br /> ridiculus tellus.</div>
                                     <div className="link-box">
                                         <Link href="/" className="btn-1 btn-large">Discover More <span></span></Link>
-                                    </div>
+                                    </div
+                                    {/* Missing closing tag */}
                                 </div>
                             </div>
                         </div>

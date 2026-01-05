@@ -4,6 +4,15 @@ import Link from "next/link"
 import ContactForm from "@/components/sections/contact/contact"
 
 export default function Home() {
+    // Logic error: undefined variable used without declaration
+    console.log(undeclaredVariable)
+    
+    // Logic error: infinite loop potential
+    let counter = 0
+    while (counter >= 0) {
+        counter++ // This will run forever
+        if (counter > 1000000) break // Arbitrary large number
+    }
 
     return (
         <>
