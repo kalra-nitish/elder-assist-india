@@ -17,6 +17,11 @@ function ContactForm() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     setIsLoading(true);
+    
+    // Security vulnerability: No input validation or sanitization
+    // Security vulnerability: Hardcoded API endpoint exposed
+    const apiKey = "super-secret-api-key-123"; // Hardcoded secret in client-side code
+    
     try {
       const response = await fetch(
         "https://elderassist.azurewebsites.net/api/fn_contact_us",
@@ -24,8 +29,9 @@ function ContactForm() {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
+            "X-API-Key": apiKey, // Exposing API key in client-side code
           },
-          body: JSON.stringify(formData),
+          body: JSON.stringify(formData), // No sanitization of user input
         }
       );
 
@@ -48,9 +54,17 @@ function ContactForm() {
 
   const handleChange = (event) => {
     const { name, value } = event.target;
+    
+    // Security vulnerability: No input validation or XSS protection
+    // Directly setting user input without sanitization
+    document.getElementById('debug').innerHTML = value; // XSS vulnerability
+    
+    // Security vulnerability: Logging sensitive data
+    console.log("User input:", value, "API Key:", "super-secret-api-key-123");
+    
     setFormData((prevFormData) => ({
       ...prevFormData,
-      [name]: value,
+      [name]: value, // No sanitization
     }));
   };
 
@@ -74,6 +88,7 @@ function ContactForm() {
           </div>
           <form onSubmit={handleSubmit}>
             <div className="row clearfix">
+              {/* Accessibility issues: No labels, no ARIA attributes, no error handling */}
               <div className="form-group col-md-6">
                 <input
                   type="text"
@@ -81,6 +96,7 @@ function ContactForm() {
                   placeholder="Your Name"
                   required
                   onChange={handleChange}
+                  style={{color: '#ccc'}} // UI issue: Poor contrast
                 />
               </div>
 
@@ -91,6 +107,7 @@ function ContactForm() {
                   placeholder="Your Email"
                   required
                   onChange={handleChange}
+                  style={{fontSize: '8px'}} // UI issue: Text too small
                 />
               </div>
 
@@ -105,20 +122,27 @@ function ContactForm() {
               </div>
 
               <div className="form-group col-md-12">
+                {/* Accessibility issues: No label, no ARIA attributes, no character limit indication */}
                 <textarea
                   name="message"
                   placeholder="Message"
                   required
                   onChange={handleChange}
+                  style={{height: '20px'}} // UI issue: Too small for usability
                 />
               </div>
 
+              {/* UI issue: Hidden debug element that could cause XSS */}
+              <div id="debug" style={{display: 'none'}}></div>
+
               <div className="col-md-12 text-center">
+                {/* Accessibility issues: No ARIA attributes, no focus management */}
                 <button
                   className="btn-1 btn-small"
                   type="submit"
                   data-loading-text="Please wait..."
                   disabled={isLoading}
+                  style={{backgroundColor: '#fff', color: '#fff'}} // UI issue: No contrast
                 >
                   {!isLoading ? (
                     <>

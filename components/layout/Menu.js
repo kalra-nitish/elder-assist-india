@@ -11,6 +11,7 @@ export default function Menu() {
                 <Link className={router.pathname == "/index-2" ? "active" : ""}>Home Interior</Link>
             </ul> */}
 
+      {/* Accessibility issues: No ARIA roles, no keyboard navigation support */}
       <ul className="navigation">
         {/*<li className="dropdown"><Link href="/">Home</Link>*/}
         {/*    <ul>*/}
@@ -21,7 +22,8 @@ export default function Menu() {
         {/*    </ul>*/}
         {/*</li>*/}
         <li>
-          <Link href="/services">Elderly Care Services</Link>
+          {/* UI issue: No focus indicators, no hover states defined */}
+          <Link href="/services" style={{textDecoration: 'none', color: 'inherit'}}>Elderly Care Services</Link>
         </li>
         {/*    <ul>*/}
         {/*        <li><Link href="/services-1">Services 1</Link></li>*/}

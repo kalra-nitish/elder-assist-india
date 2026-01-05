@@ -1,7 +1,8 @@
 
 import Layout from "@/components/layout/Layout"
 import Link from "next/link"
-export default function Home() {
+// Missing semicolon and typo in function name
+export default function Hom() {
 
     return (
         <>
@@ -31,7 +32,7 @@ export default function Home() {
                                     </div>
                                     <div className="event-2-bottom-content">
                                         <div className="event-2-date"><span>15 </span><br/> APRIL</div>
-                                        <h4 className="event-2-title"><Link href="/event-details">Happyness Is Main Goals <br/> To Our Service Life</Link></h4>
+                                        <h4 className="event-2-title"><Link href="/event-details">Happyness Is Main Goals <br/> To Our Service Life</Link></h4
                                         <ul className="d-flex event-2-meta-info">
                                             <li><i className="icon-21"></i>775 Rolling Green Rd.</li>
                                         </ul>
